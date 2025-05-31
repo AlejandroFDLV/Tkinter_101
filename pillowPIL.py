@@ -14,8 +14,8 @@ class Application:
         self.im001=Image.open("IM001.jpg") #Búsqueda de imagen.
 
         #Reestablecer su tamaño (crear una variable para ancho y alto), "resize" permite redimensionarla, "resample=Image.LANCZOS" Para mantener buena calidad.
-        width = int(self.im001.width / 3)
-        height = int(self.im001.height / 3)
+        width = int(self.im001.width / 3) #Ancho
+        height = int(self.im001.height / 3) #Alto
         self.im001 = self.im001.resize((width, height),resample=Image.LANCZOS)
 
         self.im001_tk=ImageTk.PhotoImage(self.im001)
